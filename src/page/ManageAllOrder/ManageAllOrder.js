@@ -34,7 +34,7 @@ const ManageAllOrder = () => {
       <h2 className="text-4xl m-3 font-semibold my-11 py-11">
         Manage All Booking:{allOrder.length}
       </h2>
-      <table className="table-auto m-10">
+      <table className="">
         <thead>
           <tr className="border-2">
             <th className="w-1/5 border">#</th>

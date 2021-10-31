@@ -12,6 +12,7 @@ import Login from './page/Login/Login/Login'
 import ManageAllOrder from './page/ManageAllOrder/ManageAllOrder'
 import MyOrder from './page/MyOrder/MyOrder'
 import PrivateRoute from './PrivateRoute/PrivateRoute'
+import NotFound from './NotFound/NotFound'
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
               <ManageAllOrder></ManageAllOrder>
               <Footer></Footer>
             </PrivateRoute>
+            <Route exact path="*">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
         </Router>
       </AuthProvider>
