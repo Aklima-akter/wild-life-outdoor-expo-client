@@ -47,7 +47,7 @@ const Banner = () => {
           </div>
           <div className="carousel-item">
             <img
-              src="https://i.ibb.co/nf6W1th/tent-camping-travel-135562-300x188.jpg"
+              src="https://i.ibb.co/9ZpmPzc/800px-Camping-tent-grass.jpg"
               className="d-block w-100"
               alt="..."
             />

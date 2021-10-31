@@ -78,7 +78,7 @@ const ManageAllOrder = () => {
             {allOrder.map((allData, index) => (
               <tbody className="mb-4">
                 <tr className="border">
-                  <td className="border">{index}</td>
+                  <td className="border">{index + 1}</td>
                   <td className="border text-red-400">{allData.title}</td>
                   <td className="border p-3">{allData.description}</td>
                   <td className="border p-3">
