@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import swal from 'sweetalert'
 
 const AddCamping = () => {
   const {
@@ -21,8 +22,8 @@ const AddCamping = () => {
       .then((res) => res.json())
       .then((result) => {
         if (result.insertedId) {
-          alert('Added Successfully')
-          console.log(result.insertedId)
+          swal('Good job!', 'Added Successfully!', 'success')
+          // console.log(result.insertedId)
           reset()
         }
       })

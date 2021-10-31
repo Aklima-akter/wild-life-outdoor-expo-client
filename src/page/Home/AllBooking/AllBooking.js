@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { useForm } from 'react-hook-form'
 import useAuth from '../../../hooks/useAuth'
+import swal from 'sweetalert'
 
 const AllBooking = () => {
   const {
@@ -20,6 +21,7 @@ const AllBooking = () => {
       .then((result) => setBooking(result))
   }, [id])
   const onSubmit = (data) => {
+    data.status = 'pending'
     data.email = user?.email
     data.title = booking?.title
     data.img = booking?.img
@@ -34,7 +36,7 @@ const AllBooking = () => {
       .then((res) => res.json())
       .then((result) => {
         if (result.insertedId) {
-          alert('Booking Successfully')
+          swal('Good job!', 'Booking Successfull!', 'success')
           reset()
         }
       })

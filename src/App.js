@@ -42,7 +42,6 @@ function App() {
             <PrivateRoute path="/myBooking">
               <Header></Header>
               <MyOrder></MyOrder>
-              <Footer></Footer>
             </PrivateRoute>
             <PrivateRoute path="/addcamping">
               <Header></Header>
@@ -62,7 +61,6 @@ function App() {
             <PrivateRoute path="/manageAllOrder">
               <Header></Header>
               <ManageAllOrder></ManageAllOrder>
-              <Footer></Footer>
             </PrivateRoute>
             <Route exact path="*">
               <NotFound></NotFound>
