@@ -5,7 +5,7 @@ const ManageAllOrder = () => {
   // console.log(allOrder)
 
   useEffect(() => {
-    fetch('http://localhost:5000/allOrder')
+    fetch('https://dark-alien-02734.herokuapp.com/allOrder')
       .then((res) => res.json())
       .then((data) => {
         setAllOrder(data)
@@ -14,7 +14,7 @@ const ManageAllOrder = () => {
 
   //DELETE AN ORDER
   const handleDeleteOrder = (id) => {
-    const url = `http://localhost:5000/allOrder/${id}`
+    const url = `https://dark-alien-02734.herokuapp.com/allOrder/${id}`
     fetch(url, {
       method: 'DELETE',
     })

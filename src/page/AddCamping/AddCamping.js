@@ -11,7 +11,7 @@ const AddCamping = () => {
 
   //   console.log(watch)
   const onSubmit = (data) => {
-    fetch('http://localhost:5000/addCamping', {
+    fetch('https://dark-alien-02734.herokuapp.com/addCamping', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

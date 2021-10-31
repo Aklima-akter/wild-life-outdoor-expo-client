@@ -15,7 +15,7 @@ const AllBooking = () => {
   const [booking, setBooking] = useState({})
 
   useEffect(() => {
-    fetch(`http://localhost:5000/addCamping/${id}`)
+    fetch(`https://dark-alien-02734.herokuapp.com/addCamping/${id}`)
       .then((res) => res.json())
       .then((result) => setBooking(result))
   }, [id])
@@ -24,7 +24,7 @@ const AllBooking = () => {
     data.title = booking?.title
     data.img = booking?.img
     data.description = booking?.description
-    fetch('http://localhost:5000/allOrder', {
+    fetch('https://dark-alien-02734.herokuapp.com/allOrder', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
